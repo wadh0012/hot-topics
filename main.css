@@ -62,7 +62,7 @@ header .logo
 }
 .masthead
 {
-	background-image:url(../images/mastheadbg.jpg);
+	background-image:url(mastheadbg.jpg);
 	padding:2rem 0rem;
 	//min-height:200px;
 	background-position: center;
