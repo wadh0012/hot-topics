@@ -1,17 +1,17 @@
 const container = document.getElementById('maincontent');
 const links= document.getElementsByClassName('aa');
-let url = "partials/homepagepartial.html";
+let url = "homepagepartial.html";
 
 const loadcontent = function(v){
 	if(v=="index.html")
 	{
-		url = "partials/homepagepartial.html"
+		url = "homepagepartial.html"
 
 	}
 	else if(v=="portfolio.html")
 	{
 		
-		url = "partials/portfoliopagepartial.html"
+		url = "portfoliopagepartial.html"
 	}
 	else
 	{
