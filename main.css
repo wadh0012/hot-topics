@@ -1,0 +1,308 @@
+*{box-sizing: border-box;}
+body
+{
+	margin: 0px;
+	font-size: 1.25rem;
+	position: relative;
+	font-family: 'Schibsted Grotesk', sans-serif;
+	line-height: 1.5;
+}
+.hideonlargescreen
+{
+	display: none;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Playfair Display', serif;
+}
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+.container
+{
+	max-width:1170px;
+	width:100%;
+	padding-left:1rem;
+	padding-right: 1rem;
+	margin: 0 auto;
+}
+.clear
+{
+	clear: both;
+}
+header
+{
+	padding: 1rem 0 0 0;
+	
+}
+header .logo
+{
+	width:5%;
+	float: left;
+	color:#F24194;
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+.navigation-bar
+{
+	width:95%;
+	float:left;
+	padding: 1rem 0;
+	
+}
+.navigation-bar a
+{
+	margin: 0px 1rem;
+	background-color: #F24194;
+	padding: 1rem;
+	display: inline-block;
+	color:#F2E4EC;
+}
+.masthead
+{
+	background-image:url(../images/mastheadbg.jpg);
+	padding:2rem 0rem;
+	//min-height:200px;
+	background-position: center;
+	color:#F2E4EC;
+
+
+}
+.maincontent
+{
+
+}
+.maincontent h1
+{
+	color:#F24194;
+}
+.content figure
+{
+	float: left;
+	width:40%;
+	height:400px;
+	margin: 0 3rem 3rem 0;
+	
+	text-align: center;
+	//clip-path: inset(0 0 0 0);
+	shape-outside: inset(0 0 0 0);
+}
+figcaption
+{
+	text-align: center;
+	background-color: #F288C2;
+	color:#F2C9E0;
+}
+.content figure img
+{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+
+	
+}
+.content
+{
+	border-bottom: 2px solid #F2A2CE;
+	padding: 2rem 0 ;
+}
+
+.maincontent .content p:first-of-type
+{
+	margin-top: 0px;
+}
+.maincontent .content p:last-of-type
+{
+	padding-left:32rem;
+}
+footer
+{
+	background-color: #F2E4EC; /*pink5*/
+	color:#F24194; /*pink1*/
+	padding: 1rem 0;
+}
+.companyinfo p
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+
+}
+.social
+{
+	
+	padding: 1rem 0;
+}
+.social a
+{
+	margin-right:2rem;
+	margin-left:2rem;
+
+}
+.mt-0
+{
+	margin-top:0px;
+}
+.row
+{
+	
+	margin: 0 auto;
+	justify-content: center;
+	justify-items: center;
+	padding: 2rem 0 3rem 0;
+	
+	border-bottom: 2px solid #F288C2;
+
+}
+.card
+{
+	width:31.3%;
+	float: left;
+	margin: 1.5% 1%;
+	text-align: center;
+	
+}
+.card figure
+{
+	margin: 0px !important;
+	width:100%;
+	//height:300px;
+	text-align: center;
+	
+	
+}
+.card figure img
+{
+	border:2px solid white;
+	width:300px;
+	height: 300px;
+	object-fit: cover;
+	transition: 2s linear all;
+}
+.card:hover figure img
+{
+	object-fit:contain;
+}
+/* Color Theme Swatches in Hex */
+/*
+pink-1 #F24194
+pink-2 #F288C2
+pink 3 #F2A2CE
+pink-4 #F2C9E0
+pink-5 #F2E4EC
+
+*/
+
+@media (max-width:80rem) and (min-width:35rem)
+{
+	body
+	{
+		font-size: 1rem;
+		text-align: center;
+	}
+	header .col
+	{
+		width:100%;
+		float: none;
+	}
+	.navigation-bar a
+	{
+		width:150px;
+		margin: 0;
+	}
+	.row
+{
+	
+	
+	
+	margin: 0 auto;
+	justify-content: center;
+	justify-items: center;
+	padding: 2rem 0 3rem 0;
+	
+	border-bottom: 2px solid #F288C2;
+
+}
+.card
+{
+	width:48%;
+}
+.clear.mid
+{
+	clear: none;
+}
+.content figure
+{
+	width: 40%;
+	height:300px;
+}
+.maincontent .content p
+{
+	text-align: left;
+}
+.maincontent .content p:last-of-type
+{
+	padding-left:0px;
+}
+}
+@media (max-width:35rem)
+{
+	body
+	{
+		font-size: 0.75rem;
+		text-align: center;
+	}
+	.col
+	{
+		float: none !important;
+		width:100% !important;
+	}
+	
+	.navigation-bar a
+	{
+		width:100%;
+		display: block;
+		margin: 1rem 0;
+	}
+	.row
+{
+	
+	
+	margin: 0 auto;
+	justify-content: center;
+	justify-items: center;
+	padding: 2rem 0 3rem 0;
+	
+	border-bottom: 2px solid #F288C2;
+
+}
+.card
+{
+	width:100%;
+}
+header .logo
+{
+	padding: 0px;
+}
+.social a
+{
+	margin: 0 0.3rem;
+}
+.maincontent .content p
+{
+	text-align: left;
+}
+.maincontent .content p:last-of-type
+{
+	padding-left:0px;
+}
+.hideonlargescreen
+{
+	display: block;
+}
+.masthead
+{
+	display: none;
+}
+}
